@@ -1,0 +1,27 @@
+{% comment %}
+  Footer for a standard workshop.
+{% endcomment %}
+<footer>
+  <hr/>
+  <div class="row">
+    <div class="col-md-6" align="left">
+      <h4>
+	Copyright &copy; {{ 'now' | date: "%Y" }}
+	{% if site.carpentry == "swc" %}
+	<a href="https://trinobia.com/">Trinobia Academy</a>
+	{% elsif site.carpentry == "dc" %}
+	<a href="https://trinobia.com/">Trinobia Academy</a>
+	{% elsif site.carpentry == "lc" %}
+	<a href="https://trinobia.com/">Trinobia Academy</a>
+	{% elsif site.carpentry == "cp" %}
+	<a href="https://trinobia.com/">Trinobia Academy</a>
+	{% endif %}
+      </h4>
+    </div>
+    <div class="col-md-6" align="right">
+      <h4>
+	<a href="https://trinobia.com/contact/">Contact Trinobia</a>
+      </h4>
+    </div>
+  </div>
+</footer>
